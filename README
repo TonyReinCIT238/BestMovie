@@ -29,16 +29,6 @@ The following **optional** features are implemented:
 
 
 _________________GLIDE CODE THAT DISPLAY PLACEHOLDER GRAPHICS______________________
-override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val movieItem = movieList[position]
-        holder.titleTextView.text = movieItem.title
-        holder.authorTextView.text = movieItem.author
-
-        val spannableTitle = SpannableString(movieItem.title)
-        spannableTitle.setSpan(StyleSpan(Typeface.BOLD), 0, spannableTitle.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-        holder.titleTextView.text = spannableTitle
-
-        val posterUrl = "https://image.tmdb.org/t/p/w500${movieItem.posterPath}"
 
         Glide.with(holder.itemView.context)
             .load(posterUrl)
