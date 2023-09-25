@@ -35,7 +35,7 @@ _________________GLIDE CODE THAT DISPLAY PLACEHOLDER GRAPHICS___________________
             .apply(RequestOptions.placeholderOf(R.drawable.placeholder))
             .apply(RequestOptions.errorOf(R.drawable.error))
             .into(holder.posterImageView)
-    }
+
 _________________GLIDE CODE THAT DISPLAY PLACEHOLDER GRAPHICS______________________
 
 
